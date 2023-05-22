@@ -19,9 +19,27 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
-            Circle()
-                .frame(width: 200)
+            Logo
             
+            AccountSelectView
+            
+            AccountInputView
+            
+            LoginButton
+            
+            RegisterNavigator
+        }
+    }
+}
+
+extension LoginView {
+    private var Logo: some View {
+        Circle()
+            .frame(width: 200)
+    }
+    
+    private var AccountSelectView: some View {
+        VStack {
             Button {
                 accountType = .member
             } label: {
@@ -42,8 +60,11 @@ struct LoginView: View {
                     .cornerRadius(8)
             }
             .padding(.bottom, 50)
-
-            
+        }
+    }
+    
+    private var AccountInputView: some View {
+        VStack {
             TextField("아이디를 입력하세요.", text: $idValue)
                 .padding(.horizontal, 30)
                 .textFieldStyle(.roundedBorder)
@@ -52,33 +73,38 @@ struct LoginView: View {
                 .padding(.horizontal, 30)
                 .textFieldStyle(.roundedBorder)
                 .padding(.bottom, 30)
+        }
+    }
+    
+    private var LoginButton: some View {
+        Button {
             
+        } label: {
+            Text("로그인")
+                .frame(maxWidth: .infinity)
+                .frame(height: 50)
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(8)
+        }
+        .padding(.horizontal, 30)
+        .padding(.bottom, 10)
+    }
+    
+    private var RegisterNavigator: some View {
+        HStack {
+            Text("아직 회원이 아니신가요?")
             Button {
                 
             } label: {
-                Text("트레이너")
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 50)
-                    .foregroundColor(.white)
-                    .background(Color.blue)
-                    .cornerRadius(8)
+                Text("회원가입")
+                
+                Image(systemName: "chevron.forward")
+                    .padding(.leading, -5)
             }
-            .padding(.horizontal, 30)
-            .padding(.bottom, 10)
-            HStack {
-                Text("아직 회원이 아니신가요?")
-                Button {
-                    
-                } label: {
-                    Text("회원가입")
-                    
-                    Image(systemName: "chevron.forward")
-                        .padding(.leading, -5)
-                }
 
-            }
-            .font(.caption)
         }
+        .font(.caption)
     }
 }
 
