@@ -11,6 +11,7 @@
 		3D668A202A1B687B002C87D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A1F2A1B687B002C87D6 /* ContentView.swift */; };
 		3D668A222A1B687C002C87D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D668A212A1B687C002C87D6 /* Assets.xcassets */; };
 		3D668A252A1B687C002C87D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D668A242A1B687C002C87D6 /* Preview Assets.xcassets */; };
+		3D668A2D2A1B6A3C002C87D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A2C2A1B6A3C002C87D6 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3D668A1F2A1B687B002C87D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D668A212A1B687C002C87D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D668A242A1B687C002C87D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D668A2C2A1B6A3C002C87D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				3D668A1D2A1B687B002C87D6 /* HealthPT_iOSApp.swift */,
-				3D668A1F2A1B687B002C87D6 /* ContentView.swift */,
+				3D668A2B2A1B6A29002C87D6 /* View */,
 				3D668A212A1B687C002C87D6 /* Assets.xcassets */,
 				3D668A232A1B687C002C87D6 /* Preview Content */,
 			);
@@ -65,6 +67,23 @@
 				3D668A242A1B687C002C87D6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D668A2B2A1B6A29002C87D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D668A1F2A1B687B002C87D6 /* ContentView.swift */,
+				3D668A2E2A1B6A42002C87D6 /* Account */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D668A2E2A1B6A42002C87D6 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				3D668A2C2A1B6A3C002C87D6 /* LoginView.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D668A2D2A1B6A3C002C87D6 /* LoginView.swift in Sources */,
 				3D668A202A1B687B002C87D6 /* ContentView.swift in Sources */,
 				3D668A1E2A1B687B002C87D6 /* HealthPT_iOSApp.swift in Sources */,
 			);
