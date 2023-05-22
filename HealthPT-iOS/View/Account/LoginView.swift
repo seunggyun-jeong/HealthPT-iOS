@@ -27,7 +27,7 @@ struct LoginView: View {
             
             LoginButton
             
-            RegisterNavigator
+            SignUpNavigator
         }
     }
 }
@@ -86,17 +86,16 @@ extension LoginView {
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(8)
+                .bold()
         }
         .padding(.horizontal, 30)
         .padding(.bottom, 10)
     }
     
-    private var RegisterNavigator: some View {
+    private var SignUpNavigator: some View {
         HStack {
             Text("아직 회원이 아니신가요?")
-            Button {
-                
-            } label: {
+            NavigationLink(destination: SignUpView()) {
                 Text("회원가입")
                 
                 Image(systemName: "chevron.forward")
