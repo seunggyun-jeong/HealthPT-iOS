@@ -19,7 +19,9 @@ struct GymListView: View {
             List {
                 ForEach(0..<4, id: \.self) { i in
                     GymRow()
+                        .padding(.bottom)
                 }
+                .listRowSeparator(.hidden)
             }
             .listStyle(.inset)
         }

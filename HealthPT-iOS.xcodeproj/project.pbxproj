@@ -16,6 +16,7 @@
 		3D668A332A1B8D6C002C87D6 /* GymListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A322A1B8D6C002C87D6 /* GymListView.swift */; };
 		3D668A352A1B8D9C002C87D6 /* GymRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A342A1B8D9C002C87D6 /* GymRow.swift */; };
 		3D668A372A1DBA33002C87D6 /* GymDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A362A1DBA33002C87D6 /* GymDetail.swift */; };
+		3D668A392A1DBB76002C87D6 /* TrainerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A382A1DBB76002C87D6 /* TrainerRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3D668A322A1B8D6C002C87D6 /* GymListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymListView.swift; sourceTree = "<group>"; };
 		3D668A342A1B8D9C002C87D6 /* GymRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymRow.swift; sourceTree = "<group>"; };
 		3D668A362A1DBA33002C87D6 /* GymDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetail.swift; sourceTree = "<group>"; };
+		3D668A382A1DBB76002C87D6 /* TrainerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3D668A322A1B8D6C002C87D6 /* GymListView.swift */,
 				3D668A342A1B8D9C002C87D6 /* GymRow.swift */,
 				3D668A362A1DBA33002C87D6 /* GymDetail.swift */,
+				3D668A382A1DBB76002C87D6 /* TrainerRow.swift */,
 			);
 			path = Reservation;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D668A392A1DBB76002C87D6 /* TrainerRow.swift in Sources */,
 				3D668A332A1B8D6C002C87D6 /* GymListView.swift in Sources */,
 				3D668A302A1B84B7002C87D6 /* SignUpView.swift in Sources */,
 				3D668A352A1B8D9C002C87D6 /* GymRow.swift in Sources */,
