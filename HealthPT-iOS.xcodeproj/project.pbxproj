@@ -13,6 +13,9 @@
 		3D668A252A1B687C002C87D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D668A242A1B687C002C87D6 /* Preview Assets.xcassets */; };
 		3D668A2D2A1B6A3C002C87D6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A2C2A1B6A3C002C87D6 /* LoginView.swift */; };
 		3D668A302A1B84B7002C87D6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A2F2A1B84B7002C87D6 /* SignUpView.swift */; };
+		3D668A332A1B8D6C002C87D6 /* GymListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A322A1B8D6C002C87D6 /* GymListView.swift */; };
+		3D668A352A1B8D9C002C87D6 /* GymRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A342A1B8D9C002C87D6 /* GymRow.swift */; };
+		3D668A372A1DBA33002C87D6 /* GymDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A362A1DBA33002C87D6 /* GymDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		3D668A242A1B687C002C87D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D668A2C2A1B6A3C002C87D6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3D668A2F2A1B84B7002C87D6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3D668A322A1B8D6C002C87D6 /* GymListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymListView.swift; sourceTree = "<group>"; };
+		3D668A342A1B8D9C002C87D6 /* GymRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymRow.swift; sourceTree = "<group>"; };
+		3D668A362A1DBA33002C87D6 /* GymDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3D668A1F2A1B687B002C87D6 /* ContentView.swift */,
+				3D668A312A1B8C44002C87D6 /* Reservation */,
 				3D668A2E2A1B6A42002C87D6 /* Account */,
 			);
 			path = View;
@@ -87,6 +94,16 @@
 				3D668A2F2A1B84B7002C87D6 /* SignUpView.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		3D668A312A1B8C44002C87D6 /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				3D668A322A1B8D6C002C87D6 /* GymListView.swift */,
+				3D668A342A1B8D9C002C87D6 /* GymRow.swift */,
+				3D668A362A1DBA33002C87D6 /* GymDetail.swift */,
+			);
+			path = Reservation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D668A332A1B8D6C002C87D6 /* GymListView.swift in Sources */,
 				3D668A302A1B84B7002C87D6 /* SignUpView.swift in Sources */,
+				3D668A352A1B8D9C002C87D6 /* GymRow.swift in Sources */,
 				3D668A2D2A1B6A3C002C87D6 /* LoginView.swift in Sources */,
 				3D668A202A1B687B002C87D6 /* ContentView.swift in Sources */,
 				3D668A1E2A1B687B002C87D6 /* HealthPT_iOSApp.swift in Sources */,
+				3D668A372A1DBA33002C87D6 /* GymDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
