@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
-    enum AccountType {
+    enum AccountType: String, CaseIterable, Identifiable {
         case member
         case trainer
+        var id: Self { self }
     }
     
     @State var idValue: String = ""
@@ -21,7 +22,9 @@ struct LoginView: View {
         VStack {
             Logo
             
-            AccountSelectView
+            AccountTypeSelectView
+                .padding()
+                .padding(.horizontal, 30)
             
             AccountInputView
             
@@ -38,29 +41,13 @@ extension LoginView {
             .frame(width: 200)
     }
     
-    private var AccountSelectView: some View {
-        VStack {
-            Button {
-                accountType = .member
-            } label: {
-                Text("일반회원")
-                    .foregroundColor(.white)
-                    .frame(width: 250, height: 50)
-                    .background(accountType == .member ? Color.blue : Color.secondary)
-                    .cornerRadius(8)
+    private var AccountTypeSelectView: some View {
+        Picker("로그인 타입 선택", selection: $accountType) {
+            ForEach(AccountType.allCases) { type in
+                Text(type.rawValue.capitalized)
             }
-            
-            Button {
-                accountType = .trainer
-            } label: {
-                Text("트레이너")
-                    .foregroundColor(.white)
-                    .frame(width: 250, height: 50)
-                    .background(accountType == .trainer ? Color.blue : Color.secondary)
-                    .cornerRadius(8)
-            }
-            .padding(.bottom, 50)
         }
+        .pickerStyle(.segmented)
     }
     
     private var AccountInputView: some View {
@@ -77,8 +64,8 @@ extension LoginView {
     }
     
     private var LoginButton: some View {
-        Button {
-            
+        NavigationLink {
+            GymListView()
         } label: {
             Text("로그인")
                 .frame(maxWidth: .infinity)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3845C12A1DDB8A008A9166 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3845C02A1DDB8A008A9166 /* MyPageView.swift */; };
+		3D3845C32A1DDBB8008A9166 /* ReservationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3845C22A1DDBB8008A9166 /* ReservationRow.swift */; };
 		3D668A1E2A1B687B002C87D6 /* HealthPT_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A1D2A1B687B002C87D6 /* HealthPT_iOSApp.swift */; };
 		3D668A202A1B687B002C87D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A1F2A1B687B002C87D6 /* ContentView.swift */; };
 		3D668A222A1B687C002C87D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D668A212A1B687C002C87D6 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D3845C02A1DDB8A008A9166 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		3D3845C22A1DDBB8008A9166 /* ReservationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationRow.swift; sourceTree = "<group>"; };
 		3D668A1A2A1B687B002C87D6 /* HealthPT-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthPT-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D668A1D2A1B687B002C87D6 /* HealthPT_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPT_iOSApp.swift; sourceTree = "<group>"; };
 		3D668A1F2A1B687B002C87D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D3845BD2A1DDB51008A9166 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				3D3845C02A1DDB8A008A9166 /* MyPageView.swift */,
+				3D3845C22A1DDBB8008A9166 /* ReservationRow.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		3D668A112A1B687B002C87D6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,7 @@
 				3D668A1F2A1B687B002C87D6 /* ContentView.swift */,
 				3D668A312A1B8C44002C87D6 /* Reservation */,
 				3D668A2E2A1B6A42002C87D6 /* Account */,
+				3D3845BD2A1DDB51008A9166 /* MyPage */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,9 +198,11 @@
 				3D668A302A1B84B7002C87D6 /* SignUpView.swift in Sources */,
 				3D668A352A1B8D9C002C87D6 /* GymRow.swift in Sources */,
 				3D668A2D2A1B6A3C002C87D6 /* LoginView.swift in Sources */,
+				3D3845C12A1DDB8A008A9166 /* MyPageView.swift in Sources */,
 				3D668A202A1B687B002C87D6 /* ContentView.swift in Sources */,
 				3D668A1E2A1B687B002C87D6 /* HealthPT_iOSApp.swift in Sources */,
 				3D668A372A1DBA33002C87D6 /* GymDetail.swift in Sources */,
+				3D3845C32A1DDBB8008A9166 /* ReservationRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
