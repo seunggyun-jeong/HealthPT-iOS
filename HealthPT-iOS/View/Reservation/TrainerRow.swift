@@ -29,6 +29,7 @@ struct TrainerRow: View {
             }
             HStack {
                 LikeButton
+                ReservationButton
             }
         }
         .padding()
@@ -37,39 +38,40 @@ struct TrainerRow: View {
 
 extension TrainerRow {
     private var LikeButton: some View {
-        Label {
-            Text("예약하기")
-                .foregroundColor(.white)
-                .bold()
-        } icon: {
-            Image(systemName: "heart.fill")
-                .foregroundColor(isLiked ? .red : .secondary)
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 50)
-        .background(Color.accentColor.opacity(0.5))
-        .cornerRadius(8)
-        .onTapGesture {
+        Button {
             isLiked.toggle()
+        } label: {
+            Label {
+                Text("찜하기")
+                    .foregroundColor(.white)
+                    .bold()
+            } icon: {
+                Image(systemName: "heart.fill")
+                    .foregroundColor(isLiked ? .red : .secondary)
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: 50)
+            .background(Color.accentColor.opacity(0.5))
+            .cornerRadius(8)
         }
     }
     
     private var ReservationButton: some View {
-        Nav
-        Label {
-            Text("예약하기")
-                .foregroundColor(.white)
-                .bold()
-        } icon: {
-            Image(systemName: "heart.fill")
-                .foregroundColor(isLiked ? .red : .secondary)
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 50)
-        .background(Color.accentColor.opacity(0.5))
-        .cornerRadius(8)
-        .onTapGesture {
-            isLiked.toggle()
+        Button {
+            print("예약 버튼")
+        } label: {
+            Label {
+                Text("예약하기")
+                    .foregroundColor(.white)
+                    .bold()
+            } icon: {
+                Image(systemName: "calendar")
+                    .foregroundColor(.white)
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: 50)
+            .background(Color.accentColor.opacity(0.5))
+            .cornerRadius(8)
         }
     }
 }
