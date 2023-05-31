@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		3D3845C12A1DDB8A008A9166 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3845C02A1DDB8A008A9166 /* MyPageView.swift */; };
 		3D3845C32A1DDBB8008A9166 /* ReservationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3845C22A1DDBB8008A9166 /* ReservationRow.swift */; };
+		3D3845C72A24F4B8008A9166 /* GymListMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3845C62A24F4B8008A9166 /* GymListMapView.swift */; };
+		3D3845E82A273C73008A9166 /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3845E72A273C73008A9166 /* Gym.swift */; };
+		3D3845EA2A273F6A008A9166 /* GymDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3845E92A273F6A008A9166 /* GymDetail.swift */; };
+		3D3845EC2A27539B008A9166 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3845EB2A27539B008A9166 /* NetworkManager.swift */; };
+		3D3845EE2A276885008A9166 /* Trainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3845ED2A276885008A9166 /* Trainer.swift */; };
 		3D668A1E2A1B687B002C87D6 /* HealthPT_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A1D2A1B687B002C87D6 /* HealthPT_iOSApp.swift */; };
 		3D668A202A1B687B002C87D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A1F2A1B687B002C87D6 /* ContentView.swift */; };
 		3D668A222A1B687C002C87D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D668A212A1B687C002C87D6 /* Assets.xcassets */; };
@@ -17,13 +22,18 @@
 		3D668A302A1B84B7002C87D6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A2F2A1B84B7002C87D6 /* SignUpView.swift */; };
 		3D668A332A1B8D6C002C87D6 /* GymListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A322A1B8D6C002C87D6 /* GymListView.swift */; };
 		3D668A352A1B8D9C002C87D6 /* GymRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A342A1B8D9C002C87D6 /* GymRow.swift */; };
-		3D668A372A1DBA33002C87D6 /* GymDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A362A1DBA33002C87D6 /* GymDetail.swift */; };
+		3D668A372A1DBA33002C87D6 /* TrainerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A362A1DBA33002C87D6 /* TrainerList.swift */; };
 		3D668A392A1DBB76002C87D6 /* TrainerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D668A382A1DBB76002C87D6 /* TrainerRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D3845C02A1DDB8A008A9166 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		3D3845C22A1DDBB8008A9166 /* ReservationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationRow.swift; sourceTree = "<group>"; };
+		3D3845C62A24F4B8008A9166 /* GymListMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymListMapView.swift; sourceTree = "<group>"; };
+		3D3845E72A273C73008A9166 /* Gym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
+		3D3845E92A273F6A008A9166 /* GymDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetail.swift; sourceTree = "<group>"; };
+		3D3845EB2A27539B008A9166 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3D3845ED2A276885008A9166 /* Trainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trainer.swift; sourceTree = "<group>"; };
 		3D668A1A2A1B687B002C87D6 /* HealthPT-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthPT-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D668A1D2A1B687B002C87D6 /* HealthPT_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPT_iOSApp.swift; sourceTree = "<group>"; };
 		3D668A1F2A1B687B002C87D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,7 +43,7 @@
 		3D668A2F2A1B84B7002C87D6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3D668A322A1B8D6C002C87D6 /* GymListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymListView.swift; sourceTree = "<group>"; };
 		3D668A342A1B8D9C002C87D6 /* GymRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymRow.swift; sourceTree = "<group>"; };
-		3D668A362A1DBA33002C87D6 /* GymDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetail.swift; sourceTree = "<group>"; };
+		3D668A362A1DBA33002C87D6 /* TrainerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerList.swift; sourceTree = "<group>"; };
 		3D668A382A1DBB76002C87D6 /* TrainerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +67,16 @@
 			path = MyPage;
 			sourceTree = "<group>";
 		};
+		3D3845E62A273C4F008A9166 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D3845E72A273C73008A9166 /* Gym.swift */,
+				3D3845EB2A27539B008A9166 /* NetworkManager.swift */,
+				3D3845ED2A276885008A9166 /* Trainer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3D668A112A1B687B002C87D6 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +98,7 @@
 			children = (
 				3D668A1D2A1B687B002C87D6 /* HealthPT_iOSApp.swift */,
 				3D668A2B2A1B6A29002C87D6 /* View */,
+				3D3845E62A273C4F008A9166 /* Model */,
 				3D668A212A1B687C002C87D6 /* Assets.xcassets */,
 				3D668A232A1B687C002C87D6 /* Preview Content */,
 			);
@@ -117,8 +138,10 @@
 			children = (
 				3D668A322A1B8D6C002C87D6 /* GymListView.swift */,
 				3D668A342A1B8D9C002C87D6 /* GymRow.swift */,
-				3D668A362A1DBA33002C87D6 /* GymDetail.swift */,
+				3D668A362A1DBA33002C87D6 /* TrainerList.swift */,
 				3D668A382A1DBB76002C87D6 /* TrainerRow.swift */,
+				3D3845C62A24F4B8008A9166 /* GymListMapView.swift */,
+				3D3845E92A273F6A008A9166 /* GymDetail.swift */,
 			);
 			path = Reservation;
 			sourceTree = "<group>";
@@ -194,14 +217,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D668A392A1DBB76002C87D6 /* TrainerRow.swift in Sources */,
+				3D3845E82A273C73008A9166 /* Gym.swift in Sources */,
+				3D3845C72A24F4B8008A9166 /* GymListMapView.swift in Sources */,
 				3D668A332A1B8D6C002C87D6 /* GymListView.swift in Sources */,
 				3D668A302A1B84B7002C87D6 /* SignUpView.swift in Sources */,
 				3D668A352A1B8D9C002C87D6 /* GymRow.swift in Sources */,
 				3D668A2D2A1B6A3C002C87D6 /* LoginView.swift in Sources */,
 				3D3845C12A1DDB8A008A9166 /* MyPageView.swift in Sources */,
 				3D668A202A1B687B002C87D6 /* ContentView.swift in Sources */,
+				3D3845EE2A276885008A9166 /* Trainer.swift in Sources */,
 				3D668A1E2A1B687B002C87D6 /* HealthPT_iOSApp.swift in Sources */,
-				3D668A372A1DBA33002C87D6 /* GymDetail.swift in Sources */,
+				3D3845EC2A27539B008A9166 /* NetworkManager.swift in Sources */,
+				3D3845EA2A273F6A008A9166 /* GymDetail.swift in Sources */,
+				3D668A372A1DBA33002C87D6 /* TrainerList.swift in Sources */,
 				3D3845C32A1DDBB8008A9166 /* ReservationRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +362,7 @@
 				DEVELOPMENT_TEAM = G7X65ZSJ3J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "이 앱은 당신의 위치를 요구합니다. ㄷㄷ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,6 +392,7 @@
 				DEVELOPMENT_TEAM = G7X65ZSJ3J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "이 앱은 당신의 위치를 요구합니다. ㄷㄷ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -20,7 +20,7 @@ struct GymListView: View {
                 List {
                     ForEach(0..<4, id: \.self) { i in
                         NavigationLink {
-                            GymDetail()
+//                            TrainerList(dismissButton: .constant(false), gymName: .constant(""))
                         } label: {
                             GymRow()
                                 .padding(.bottom)
@@ -32,10 +32,12 @@ struct GymListView: View {
             }
             .navigationTitle("헬스장 리스트")
             .toolbar {
-                NavigationLink {
-                    MyPageView()
-                } label: {
-                    Label("마이페이지", systemImage: "person.crop.circle")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        MyPageView()
+                    } label: {
+                        Label("마이페이지", systemImage: "person.crop.circle")
+                    }
                 }
             }
         }
