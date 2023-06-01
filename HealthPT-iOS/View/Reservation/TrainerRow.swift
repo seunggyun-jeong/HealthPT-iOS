@@ -49,11 +49,11 @@ extension TrainerRow {
                 Image(systemName: "heart.fill")
                     .foregroundColor(isLiked ? .red : .secondary)
             }
-            .frame(maxWidth: .infinity)
-            .frame(height: 50)
-            .background(Color.accentColor.opacity(0.5))
-            .cornerRadius(8)
         }
+        .frame(maxWidth: .infinity)
+        .frame(height: 50)
+        .background(Color.accentColor.opacity(0.5))
+        .cornerRadius(8)
     }
     
     private var ReservationButton: some View {
@@ -68,11 +68,11 @@ extension TrainerRow {
                 Image(systemName: "calendar")
                     .foregroundColor(.white)
             }
-            .frame(maxWidth: .infinity)
-            .frame(height: 50)
-            .background(Color.accentColor.opacity(0.5))
-            .cornerRadius(8)
         }
+        .frame(maxWidth: .infinity)
+        .frame(height: 50)
+        .background(Color.accentColor.opacity(0.5))
+        .cornerRadius(8)
     }
 }
 

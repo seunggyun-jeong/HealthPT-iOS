@@ -6,10 +6,42 @@
 //
 
 import Foundation
+import Combine
 
 class NetworkManager {
+    static var cancellables = Set<AnyCancellable>()
+    
     static let serverAddress: String = "https://1ef3-218-149-226-174.ngrok-free.app"
     static let successRange = 200..<300
+    
+    static func register(data: SignUpModel, completion: @escaping (Int) -> Void) {
+        let session = URLSession(configuration: .default)
+        guard let upLoadData = try? JSONEncoder().encode(data) else { return }
+        let request: URLRequest
+        
+        do {
+            request = try makePostRequest(api: "/user-service/signup", data: upLoadData, ip: serverAddress)
+        } catch(let error) {
+            print("error: \(error)")
+            return
+        }
+        
+        let dataTask = session.dataTask(with: request) { data, response, error in
+            guard error == nil,
+                  let statusCode = (response as? HTTPURLResponse)?.statusCode,
+                  successRange.contains(statusCode)
+            else {
+                print((response as? HTTPURLResponse)?.statusCode)
+                return
+            }
+            
+            print("statusCode ===> \(statusCode)")
+            
+            completion(statusCode)
+        }
+        
+        dataTask.resume()
+    }
 
     // 체육관 리스트 불러오기
     static func loadKeywordSearch(api: String, completion: @escaping ([Gym]) -> Void) {
@@ -122,4 +154,13 @@ class NetworkManager {
 
 struct KeywordSearchBodyData: Codable {
     var gymInfo = ""
+}
+
+struct SignUpModel: Codable {
+    let memberId: String
+    let memberPassword: String
+    let memberName: String
+    let memberEamil: String
+    let memberPhone_Number: String
+    let memberAddress: String
 }

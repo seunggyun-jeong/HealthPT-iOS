@@ -15,6 +15,10 @@ struct SignUpView: View {
     @State var address: String = ""
     @State var eMail: String = ""
     
+    @State var isSuccess: Bool = false
+    @State var isFail: Bool = false
+    
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
             Logo
@@ -24,7 +28,9 @@ struct SignUpView: View {
                 .padding(.horizontal, 30)
             
             Button {
-                
+                NetworkManager.register(data: SignUpModel(memberId: id, memberPassword: password, memberName: name, memberEamil: eMail, memberPhone_Number: phoneNumber, memberAddress: address)) { statusCode in
+                    
+                }
             } label: {
                 Text("회원 가입")
                     .frame(maxWidth: .infinity)
@@ -37,6 +43,16 @@ struct SignUpView: View {
             .padding(.horizontal, 30)
 
         }
+        .alert("회원가입 성공", isPresented: $isSuccess) {
+            Button("확인") {
+                dismiss()
+            }
+        } message: {
+            VStack {
+                Text("회원님의 아이디는 \(id)입니다.")
+            }
+        }
+
     }
 }
 
